@@ -1,0 +1,22 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://soa.com/soap/calculator"
+           targetNamespace="http://soa.com/soap/calculator" elementFormDefault="qualified">
+
+    <xs:element name="getSumRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="firstNumber" type="xs:int"/>
+                <xs:element name="secondNumber" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getSumResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="result" type="xs:int"/>
+                <xs:element name="error" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
